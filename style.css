@@ -121,7 +121,6 @@ li{
     /* Resized main-content to fit 640px  */
     #container {
     position: absolute;
-    left: 5%;
     width:450px;
     height:450px;
     }
