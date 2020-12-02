@@ -113,7 +113,7 @@ li{
 @media screen and (max-width: 640px) {
     /* Resized content to fit 640px  */
     body {
-      min-width: 640px;
+      min-width: 500px;
     }
     /* Resized main-content to fit 640px  */
     #container {
@@ -136,7 +136,7 @@ li{
         background: green;
         border-radius: 12px;
         color:white;
-        padding:20px;
+        padding:5px;
     }
 
     .clear {
@@ -146,7 +146,7 @@ li{
         background: red;
         border-radius: 12px;
         color:white;
-        padding:20px;
+        padding:5px;
     }
 
 }
