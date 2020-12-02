@@ -45,9 +45,6 @@ h1{
     color:white;
     margin-top:10px;
     margin-left: 30px;
-    
-    
-
 }
 li{
     cursor: pointer;  
@@ -122,7 +119,7 @@ li{
     #container {
     position: absolute;
     width:350px;
-    height:450px;
+    height:550px;
     
     }
 
@@ -132,6 +129,26 @@ li{
         background: yellow;
                 
     }
+    .restart {
+        
+        font-weight: bold;
+        font-size:20px;
+        background: green;
+        border-radius: 12px;
+        color:white;
+        padding:20px;
+    }
+
+    .clear {
+   
+        font-weight: bold;
+        font-size:20px;
+        background: red;
+        border-radius: 12px;
+        color:white;
+        padding:20px;
+    }
+
 }
     
     
