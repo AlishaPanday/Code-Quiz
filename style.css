@@ -5,7 +5,7 @@
 
 #container {
     position: absolute;
-    left: 30%;
+    left: 33%;
     top: 15%;
     width: 500px;
     height: 400px;
@@ -39,8 +39,7 @@ h1{
     font-weight: bold;
     font-size:20px;
     background: yellow;
-    border-radius: 12px;
-    
+    border-radius: 12px;    
 }
 #quizContent{
     color:white;
@@ -51,7 +50,95 @@ h1{
 
 }
 li{
-    cursor: pointer;
+    cursor: pointer;  
+       
 }
+
+#initials{
+    padding:5px;
+}
+#labelCreate{
+    margin-top:20px;
+    font-weight:bold;
+    padding:5px;
+    color:white;
+    font-size:18px;
+}
+
+#Submit {
+    
+    font-weight: bold;
+    font-size:20px;
+    background: yellow;
+    padding-bottom:5px;
+        
+}
+
+.restart {
+    margin-left: 10%;
+    font-weight: bold;
+    font-size:20px;
+    background: green;
+    border-radius: 12px;
+    color:white;
+    padding:20px;
+}
+
+.clear {
+   
+    font-weight: bold;
+    font-size:20px;
+    background: red;
+    border-radius: 12px;
+    color:white;
+    padding:20px;
+}
+
+#score-initials {
+    font-weight:bold;
+    color: white;
+}
+@media screen and (max-width: 786px) {
+    /* Resized content to fit 786px  */
+    body {
+      max-width: 786px;
+    }
+    /* Resized main-content to fit 786px  */
+    #container {
+    position: absolute;
+    left:10%;
+   
+    }
+    
+ 
+}
+/* A Media Query max-width: 640px */
+@media screen and (max-width: 640px) {
+    /* Resized content to fit 640px  */
+    body {
+      min-width: 640px;
+    }
+    /* Resized main-content to fit 640px  */
+    #container {
+    position: absolute;
+    left: 5%;
+    width:450px;
+    height:450px;
+    }
+
+    #Submit {
+    
+        font-weight: bold;
+        font-size:10px;
+        background: yellow;
+        padding-bottom:2px;
+        
+            
+    }
+}
+    
+    
+    
+
 
 
