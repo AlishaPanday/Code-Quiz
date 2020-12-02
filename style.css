@@ -121,18 +121,16 @@ li{
     /* Resized main-content to fit 640px  */
     #container {
     position: absolute;
-    width:450px;
+    width:350px;
     height:450px;
+    
     }
 
     #Submit {
-    
         font-weight: bold;
         font-size:10px;
         background: yellow;
-        padding-bottom:2px;
-        
-            
+                
     }
 }
     
