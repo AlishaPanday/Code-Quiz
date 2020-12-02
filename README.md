@@ -4,7 +4,8 @@
 This week’s homework requires  to build a timed coding quiz with multiple choice questions. This app will run in the browser, and will feature dynamically updated HTML,CSS powered by JavaScript code.
 
 ## Installation
-https://github.com/AlishaPanday/Code-Quiz
+https://github.com/AlishaPanday/Code-Quiz  <br  />
+https://alishapanday.github.io/Code-Quiz/
 
 
 
