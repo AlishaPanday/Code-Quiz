@@ -118,7 +118,7 @@ li{
     /* Resized main-content to fit 640px  */
     #container {
     position: absolute;
-    width:250px;
+    width:550px;
     height:550px;
     
     }
@@ -127,13 +127,13 @@ li{
         font-weight: bold;
         font-size:10px;
         background: yellow;
-        margin-left:30%;
+        padding:10px;
                 
     }
     .restart {
         
         font-weight: bold;
-        font-size:15px;
+        font-size:20px;
         background: green;
         border-radius: 12px;
         color:white;
@@ -141,11 +141,14 @@ li{
     }
 
     .clear {
+   
         font-weight: bold;
-        font-size:15px;
+        font-size:20px;
         background: red;
         border-radius: 12px;
-        color:white;      
+        color:white;
+        float:right;
+        
     }
 
 }
