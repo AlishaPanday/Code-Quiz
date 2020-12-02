@@ -69,17 +69,17 @@ function check (event) {
         //set attribute
         status.setAttribute("id","status-alert");
         //check condition if choice is correct or incorrect
-        if(event.target.textContent == questions[questionIndex].answer){
+        if(event.target.textContent === questions[questionIndex].answer){
              score++;
             status.textContent = "Correct!"   
-            status.setAttribute("style", "color:#99ff33;font-weight:bold;text-align:center;");
+            status.setAttribute("style", "color:#99ff33;font-weight:bold;text-align:center;");       
         }
         //penalty -10 sec for each incorrect answer
         else {
             
             status.textContent = "Incorrect!";
             status.setAttribute("style", "color:red;font-weight:bold;text-align:center;");
-            timeRemaining = timeRemaining - penalty;
+            timeRemaining = timeRemaining - penalty;      
         }
 
     }
@@ -87,8 +87,8 @@ function check (event) {
     questionIndex++;
  // check if all question answered or time reaches 0 and dispaly the score
     if(questionIndex >= questions.length){
-         quizCompletion();
-         status.textContent = "End of quiz. You got " + score + "/" +questions.length + "Correct"
+        status.textContent = "You got " + score + "/" +questions.length + "Correct"
+        quizCompletion();
          status.setAttribute("style", "color:#99ff33;font-weight:bold;text-align:center;");
          clearInterval(timerInterval);
     }
@@ -105,7 +105,7 @@ function check (event) {
      quizContent.innerHTML = "";
      divTag.innerHTML = "";
      var createH1 = document.createElement("h1");
-     createH1.textContent = "All Done";
+     createH1.textContent = "All Done - End of quiz" ;
      var createPara = document.createElement("p");
      quizContent.appendChild(createH1);
      quizContent.appendChild(createPara);
@@ -121,7 +121,65 @@ function check (event) {
          quizContent.appendChild(createPara2);
      }
 
+    
 
+     //create label
+     var labelCreate = document.createElement("label");
+     labelCreate.setAttribute("id","labelCreate");
+     labelCreate.textContent = "Enter your initials";
+     quizContent.appendChild(labelCreate);
+
+     // create input
+
+     var inputCreate = document.createElement("input");
+     inputCreate.setAttribute("type","text");
+     inputCreate.setAttribute("id","initials");
+     inputCreate.textContent = "";
+     quizContent.appendChild(inputCreate);
+
+     //create submit button
+
+     var submitButton = document.createElement("button");
+     submitButton.setAttribute("type","submit");
+     submitButton.setAttribute("id","Submit");
+     submitButton.textContent = "Submit";
+
+     
+     quizContent.appendChild(submitButton);
+
+     //event listener to listen on click and local storage for initials and score
+
+     submitButton.addEventListener("click",function(){     
+         var initialName = inputCreate.value;
+
+         if (inputCreate === "") {
+            console.log("It cannot be empty");
+         }
+         else {
+             var user = {
+                 initials: inputCreate.value ,
+                 score: secondsLeft
+             };
+
+             console.log(user);
+             //set new submission
+             var allScores = localStorage.getItem("allScores");
+             if (allScores=== null) {
+                 allScores = [];
+             }
+             else {
+                 allScores = JSON.parse(allScores);
+             }
+             allScores.push(user);
+             var scoreNew = JSON.stringify(allScores);
+             localStorage.setItem("allScores", scoreNew);
+
+             window.location.replace("./highscore.html");
+             //get all user 
+
+         }
+     });
+    
     
  }
 
