@@ -5,7 +5,7 @@
 
 #container {
     position: absolute;
-    left: 33%;
+    left: 25%;
     top: 15%;
     width: 500px;
     height: 400px;
@@ -39,12 +39,13 @@ h1{
     font-weight: bold;
     font-size:20px;
     background: yellow;
-    border-radius: 12px;    
+    border-radius: 12px;       
 }
 #quizContent{
     color:white;
     margin-top:10px;
     margin-left: 30px;
+    
     
 
 }
@@ -121,44 +122,57 @@ li{
     #container {
     position: absolute;
     width:350px;
-    height:500px;
+    height:480px;
     
     }
+    #lead {
+        font-weight:bold;
+        padding:5px;
+        color:white;
+    }
+
     .start-button {
-        margin-left: 15%;
+        margin-left: 20%;
         font-weight: bold;
         font-size:20px;
         background: yellow;
-        border-radius: 12px;    
+        border-radius: 12px; 
+        width:30px;
+        height:  20px;     
     }
 
     #Submit {
         font-weight: bold;
-        font-size:10px;
+        font-size:15px;
         background: yellow;
-        padding:10px;
+        padding-top:7px;
+        padding-bottom:8px;
+        width:90px;
                 
     }
     .restart {
-        
+        margin-left: 10%;
         font-weight: bold;
-        font-size:20px;
+        font-size:15px;
         background: green;
         border-radius: 12px;
         color:white;
-        margin-left:5%;
+        padding:12px;
         
     }
-
     .clear {
-   
+        
         font-weight: bold;
-        font-size:20px;
+        font-size:15px;
         background: red;
         border-radius: 12px;
         color:white;
-        
+        padding:12px;
     }
+
+
+    
+    
 
 }
     
