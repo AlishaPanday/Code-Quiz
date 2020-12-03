@@ -10,7 +10,15 @@ var quizContent = document.getElementById("quizContent");
 
 //creating an audio element
 var audio = document.createElement("audio");
-audio.setAttribute("src","http://freesoundeffect.net/sites/default/files/clock-ticking-for-60-seconds-sound-effect-27993775.mp3");
+audio.setAttribute("src","https://www.fesliyanstudios.com/play-mp3/5246");
+
+var audioSad = document.createElement("audio");
+audioSad.setAttribute("src","https://www.fesliyanstudios.com/play-mp3/5637");
+
+var audioClap = document.createElement("audio");
+audioClap.setAttribute("src","https://www.fesliyanstudios.com/play-mp3/2650");
+
+
 
 
 //setting counter to 75  before the start button is clicked
@@ -44,6 +52,8 @@ buttonTag.addEventListener("click", function(){
                 clearInterval(timerInterval);
                 quizCompletion ();
                 divTag.textContent = "Time is up!";
+                audioSad.play();
+                audioClap.pause();
             }
         },1000)
     }
@@ -113,7 +123,7 @@ function check (event) {
 
 //quiz completion will append the last page.
  function quizCompletion () {
-     audio.pause();
+     
      quizContent.innerHTML = "";
      divTag.innerHTML = "";
      var createH1 = document.createElement("h1");
@@ -121,6 +131,7 @@ function check (event) {
      var createPara = document.createElement("p");
      quizContent.appendChild(createH1);
      quizContent.appendChild(createPara);
+     audioClap.play()
 
      // replace time remaining with score
      if(timeRemaining >= 0){
