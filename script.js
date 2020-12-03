@@ -10,7 +10,7 @@ var quizContent = document.getElementById("quizContent");
 
 //creating an audio element
 var audio = document.createElement("audio");
-audio.setAttribute("src","http://freesoundeffect.net/sites/default/files/clock-ticking-for-60-seconds-sound-effect-27993775.mp3")
+audio.setAttribute("src","http://freesoundeffect.net/sites/default/files/clock-ticking-for-60-seconds-sound-effect-27993775.mp3");
 
 
 //setting counter to 75  before the start button is clicked
