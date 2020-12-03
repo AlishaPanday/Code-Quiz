@@ -1,4 +1,4 @@
-
+// declared varibale
 var mainTag = document.querySelector("main");
 var container = document.querySelector("#container");
 var buttonTag = document.querySelector(".start-button");
@@ -8,6 +8,10 @@ var paragraph = document.getElementsByTagName("p");
 var ulDiv = document.querySelector(".choice-list");
 var quizContent = document.getElementById("quizContent");
 
+//creating an audio element
+var audio = document.createElement("audio");
+audio.setAttribute("src","https://www.fesliyanstudios.com/play-mp3/7032")
+
 
 //setting counter to 75  before the start button is clicked
 
@@ -16,6 +20,8 @@ var timerInterval = 0;
 var questionIndex = 0;
 var score = 0;
 var penalty = 10;
+
+//Counter div for the start page
 
 divTag.textContent = "Assigned Time: " + timeRemaining + " sec.";
 divTag.style.fontSize = "30px";
@@ -27,6 +33,7 @@ buttonTag.setAttribute("style", "color:blue;width:200px; height:50px;marginLeft:
 //when clicked button timer starts are presented with a question and choices
 
 buttonTag.addEventListener("click", function(){
+    audio.play();
     if(timerInterval === 0) {
         timerInterval = setInterval(function(){
             timeRemaining --;
@@ -41,7 +48,7 @@ buttonTag.addEventListener("click", function(){
     }
     showQuestion(questionIndex);
 });
-
+//functions for rendering questions and choices in the quiz 
 function showQuestion (questionIndex) {
     quizContent.innerHTML = "";
     heading1.innerHTML = "";
@@ -61,6 +68,8 @@ function showQuestion (questionIndex) {
         li.addEventListener("click",check);
     })
 }
+
+// functions for Comparing and checking answers
 
 function check (event) {
     event.preventDefault();
@@ -102,6 +111,7 @@ function check (event) {
 
 //quiz completion will append the last page.
  function quizCompletion () {
+     audio.pause();
      quizContent.innerHTML = "";
      divTag.innerHTML = "";
      var createH1 = document.createElement("h1");
@@ -120,8 +130,6 @@ function check (event) {
          createPara2.setAttribute("style","color:#99ff33;font-weight:bold;text-align:center;")
          quizContent.appendChild(createPara2);
      }
-
-    
 
      //create label
      var labelCreate = document.createElement("label");
@@ -173,10 +181,9 @@ function check (event) {
              allScores.push(user);
              var scoreNew = JSON.stringify(allScores);
              localStorage.setItem("allScores", scoreNew);
-
+             //redirecting user to highscore page
              window.location.replace("./highscore.html");
-             //get all user 
-
+             
          }
      });
     
