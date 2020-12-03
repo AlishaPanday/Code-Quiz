@@ -34,7 +34,13 @@ THEN I can save my initials and score
 ```
 ## Mock-Up
 The following video shows the coding  application's appearance and functionality:
-"https://drive.google.com/file/d/1kbOz_TpbQSxK9WkxQwvO59eDPMWLWKMV/preview"
+"https://drive.google.com/file/d/1kbOz_TpbQSxK9WkxQwvO59eDPMWLWKMV/preview" <br>
+![codeQuiz1](https://user-images.githubusercontent.com/72904217/100998538-9e2c4500-3596-11eb-9916-c84e977f0081.PNG)<br >
+![codeQuiz2](https://user-images.githubusercontent.com/72904217/100998169-25c58400-3596-11eb-942c-238604016cc4.PNG)<br >
+![codeQuiz3](https://user-images.githubusercontent.com/72904217/100998180-278f4780-3596-11eb-92ed-52e366603445.PNG)<br >
+![codeQuiz4](https://user-images.githubusercontent.com/72904217/100998191-29f1a180-3596-11eb-9363-8223b377fbf4.PNG)<br >
+![codeQuiz5](https://user-images.githubusercontent.com/72904217/100998197-2c53fb80-3596-11eb-850a-f75199b26ac2.PNG)<br >
+
 
 
 ### Application Quality - 15%
