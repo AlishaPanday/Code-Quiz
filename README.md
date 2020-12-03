@@ -33,7 +33,7 @@ WHEN the game is over
 THEN I can save my initials and score
 ```
 ## Mock-Up
-The following image shows the coding  application's appearance and functionality:
+The following video shows the coding  application's appearance and functionality:
 "https://drive.google.com/file/d/1kbOz_TpbQSxK9WkxQwvO59eDPMWLWKMV/preview"
 
 
