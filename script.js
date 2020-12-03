@@ -10,7 +10,7 @@ var quizContent = document.getElementById("quizContent");
 
 //creating an audio element
 var audio = document.createElement("audio");
-audio.setAttribute("src","https://www.fesliyanstudios.com/play-mp3/7032")
+audio.setAttribute("src","http://freesoundeffect.net/sites/default/files/clock-ticking-for-60-seconds-sound-effect-27993775.mp3")
 
 
 //setting counter to 75  before the start button is clicked
@@ -33,6 +33,7 @@ buttonTag.setAttribute("style", "color:blue;width:200px; height:50px;marginLeft:
 //when clicked button timer starts are presented with a question and choices
 
 buttonTag.addEventListener("click", function(){
+    audio.play();
     audio.play();
     if(timerInterval === 0) {
         timerInterval = setInterval(function(){
@@ -77,6 +78,7 @@ function check (event) {
         var status = document.createElement("div");
         //set attribute
         status.setAttribute("id","status-alert");
+        quizContent.appendChild(status);
         //check condition if choice is correct or incorrect
         if(event.target.textContent === questions[questionIndex].answer){
              score++;
