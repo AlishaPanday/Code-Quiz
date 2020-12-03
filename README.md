@@ -34,7 +34,7 @@ THEN I can save my initials and score
 ```
 ## Mock-Up
 The following image shows the coding  application's appearance and functionality:
-<iframe src="https://drive.google.com/file/d/1kbOz_TpbQSxK9WkxQwvO59eDPMWLWKMV/preview" width="640" height="480"></iframe>
+"https://drive.google.com/file/d/1kbOz_TpbQSxK9WkxQwvO59eDPMWLWKMV/preview"
 
 
 ### Application Quality - 15%
