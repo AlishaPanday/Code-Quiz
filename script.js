@@ -34,7 +34,7 @@ buttonTag.setAttribute("style", "color:blue;width:200px; height:50px;marginLeft:
 
 buttonTag.addEventListener("click", function(){
     audio.play();
-    audio.play();
+   
     if(timerInterval === 0) {
         timerInterval = setInterval(function(){
             timeRemaining --;
