@@ -1,14 +1,15 @@
 .brand {
     color:yellow;
     font-weight:bold;
+    
 }
 
 #container {
     position: absolute;
     left: 25%;
     top: 15%;
-    width: 500px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
     border: 1px solid purple;
     border-radius: 12px;
     box-shadow: 5px 10px 8px 10px #888888;
@@ -30,7 +31,7 @@ h1{
 }
 #lead {
     font-weight:bold;
-    padding:10px;
+    padding:20px;
     color:white;
 }
 
@@ -125,6 +126,7 @@ li{
     height:480px;
     
     }
+    
     #lead {
         font-weight:bold;
         padding:5px;
