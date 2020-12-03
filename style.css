@@ -1,9 +1,10 @@
+/*Navbar  */
 .brand {
     color:yellow;
     font-weight:bold;
     
 }
-
+/*Container */
 #container {
     position: absolute;
     left: 33%;
@@ -17,23 +18,28 @@
     background: linear-gradient(90deg, hsla(240, 2%, 25%, 1) 0%, hsla(60, 22%, 30%, 1) 100%);
     
 }
-
+/*Counter */
 #counter {
     text-align: center;
     padding:10px;
     font-weight: bold;
 }
+/*heading 1 */
 
 h1{
     text-align: center;
     color:yellow;
     font-weight:bold;
 }
+
+/*Paragraph */
 #lead {
     font-weight:bold;
     padding:20px;
     color:white;
 }
+
+/* start quiz button */
 
 .start-button {
     margin-left: 28%;
@@ -42,18 +48,20 @@ h1{
     background: yellow;
     border-radius: 12px;       
 }
+
+/*quiz content div */
 #quizContent{
     color:white;
     margin-top:10px;
-    margin-left: 30px;
-    
-    
+    margin-left: 30px; 
+}
 
-}
+/* list for choices*/
 li{
-    cursor: pointer;  
-       
+    cursor: pointer;       
 }
+
+/* form */
 
 #initials{
     padding:5px;
@@ -74,7 +82,7 @@ li{
     padding-bottom:5px;
         
 }
-
+ /* restart button*/
 .restart {
     margin-left: 10%;
     font-weight: bold;
@@ -84,7 +92,7 @@ li{
     color:white;
     padding:20px;
 }
-
+/*clear button  */
 .clear {
    
     font-weight: bold;
@@ -99,6 +107,10 @@ li{
     font-weight:bold;
     color: white;
 }
+
+/*Media queries starts here  */
+
+
 @media screen and (max-width: 786px) {
     /* Resized content to fit 786px  */
     body {
