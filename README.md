@@ -1,12 +1,16 @@
 # Code-Quiz
 ## Task
 
-This week’s homework requires  to build a timed coding quiz with multiple choice questions. This app will run in the browser, and will feature dynamically updated HTML,CSS powered by JavaScript code.
+ To build a timed coding quiz with multiple choice questions. This app will run in the browser, and will feature dynamically updated HTML,CSS powered by JavaScript code.
 
-## Installation
-https://github.com/AlishaPanday/Code-Quiz  <br  />
-https://alishapanday.github.io/Code-Quiz/
+## Deployment
+GitHub: https://github.com/AlishaPanday/Code-Quiz  <br  />
+Live Url: https://alishapanday.github.io/Code-Quiz/
 
+### Technology Used
+```
+
+HTML, CSS, JavaScript, Moment.JS
 
 
 ## User Story
@@ -43,14 +47,6 @@ The following video shows the coding  application's appearance and functionality
 
 
 
-### Application Quality - 15%
-```
-
-Application user experience is intuitive and easy to navigate.
-
-Application user interface style is clean and polished.
-
-Application resembles the mock-up functionality provided in the homework instructions.
 
 ```
 
