@@ -14,7 +14,7 @@ HTML, CSS, JavaScript, Moment.JS
 
 ```
 ## User Story
-
+```
 
 AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
@@ -46,9 +46,6 @@ The following video shows the coding  application's appearance and functionality
 ![codeQuiz5](https://user-images.githubusercontent.com/72904217/100998197-2c53fb80-3596-11eb-850a-f75199b26ac2.PNG)<br >
 
 
-
-
-```
 
 ### Deployment: 32%
 ```
